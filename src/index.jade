@@ -3,9 +3,10 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title How we use modular Sass at inSided
+    title FontIcons ~ a workflow inSided story
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(rel='stylesheet', type='text/css', href='http://fontfabrique.s3.amazonaws.com/1/fontfabrique/28/icons.css')
 
   body
 
@@ -22,12 +23,11 @@ html
         h5.bullet <i>OpenSource Contributor</i> ~ in Free Time
 
       section
-
-        h3.bullet This is not to talk about:
+        h3.bullet This is not a talk about:
         ul
           li Iconography
           li Fonts
-          li and not, not even Web Fonts <small class="bullet">... not generically ...</small>
+          li and not, not even Web Fonts <small class="bullet">... not generally ...</small>
 
       section
         h2.bullet Web Font Icons
@@ -38,45 +38,42 @@ html
           li They are mobile compatible
           li They are compatible with IE 7 >
           li <b>They can change color</b>
-          li Implicit traffic gain on reducing http request
-          li ... and of course a lot of open <i>(or free)</i> resources
-          li But most important for us can be <b>generated</b>
+          li Implicit traffic gain on reducing http requests
+          li ... And of course a lot of open <i>(or free)</i> resources
+          li But most important for us, they can be <b>generated</b>
 
       section
         h3.bullet But how to generate Web Fonts?
         ul
           li IcoMoon
           li FontCustom
-          li FontasticMe
           li Fontello
 
       section
-        h3.bullet But a bit of comparison:
-        img.bullet(src="img/table.png", width='100%')
+        h3.bullet A bit of comparison:
+        img.bullet(src="images/table.png", width='100%')
 
       section
-        h3.bullet ...a Bit of inSided Workflow...
-        img.bullet(src="img/workflow.png", width='100%')
+        h3.bullet ...A bit of inSided Workflow...
+        img.bullet(src="images/workflow.png", width='100%')
 
       section
-        h3.bullet ...a Bit more in dep...
-        img.bullet(src="img/flow_mass.png", width='100%')
+        h3.bullet ...A bit more in depth...
+        img.bullet(src="images/flow_mass.png", width='100%')
 
       section
-        h3.bullet So I start to create a tool <b>FontFabrique</b>
-        h4.bullet better, a not yet implemented tool, :-P to generate webfonts. <br/> <br/>
-        h4.bullet ... And I ask around to get inspiration in how to build it...
+        h3.bullet So I made a tool <b>FontFabrique</b>
+        h5.bullet actually, I am still working on it. :-P <br/> <br/>
+        h4.bullet ... And I ask around to gather inspiration in how to build it...
 
       section
-        h3.bullet I went to the designer, and I ask about use git<span class="bullet" >...</div>
+        h3.bullet I went to the designer, and I asked about using git<span class="bullet" >...</div>
         img.bullet(src="http://media.giphy.com/media/l39u4E8g53jDa/giphy.gif")
 
       section
-
-      section
-        h3.bullet ... and I start to look for alternatives ...
-        h3.bullet a versioning with UI and OS integration?
-        h3.bullet Oh waith... <span class="bullet">already exist, Why not Dropbox?</span>
+        h3.bullet ... and I started to look for alternatives ...
+        h3.bullet versioning with UI and OS integration?
+        h3.bullet Oh wait... <span class="bullet">already exist, Why not Dropbox?</span>
 
       section
         h3.bullet So I went to the Programmer.
@@ -84,28 +81,31 @@ html
         div.bullet <iframe width="560" height="315" src="https://www.youtube.com/embed/o_XaJdDqQA0" frameborder="0" allowfullscreen></iframe>
 
       section
-
-      section
         h2.bullet No Serious? Why All this?
         h3.italic.bullet "Small problems in big scale, are not so small"
         h3.italic.bullet "Boyscouting, is continous improving" ~ an <b>inSided Core Value</b>
+        h4.italic.bullet And I think: <br/><br/>
+          <span class="bullet">"Automated Tool, without additional ui/cli, are cost less in the learning cuve"</span>
+        h2.bullet <pre><i class="icon-dropbox"></i> : <i class="icon-picture-o"></i> = <i class="icon-github"></i> : <i class="icon-code"></i></pre>
 
       section
         h3.bullet but for practical people:
         ul
           li Small kb, we have only what we need
-          li save up from 15 to 20min for generate a fonts, every-time an icons is <b>create, update, delete</b>
-          li Code convention for developers, we can work with place holder. So no blocking. (Everybody is happy :-) )
+          li Save up from 15 to 20min to generate fonts, everytime an icon is <b>created, updated, deleted</b>
+          li Code convention for developers, we can work with placeholders. So no waiting for fonts. ( Everybody is happy <i class="icon icon-smile"></i> )
           li We supplement communication, and file transfer, from 15 to 20 min; with procedure.
-          li Git and assets, cause conflicts. Conflicts cause time lost, (10min to 15min) (building instr. !== builded file)
+          li Git and assets, cause conflicts. Conflicts cause time loss, from 10min to 15min. <br/>
+             small (building instr. <i class="icon-file-code-o"></i> !== builded file <i class="icon-file-image-o"></i>)
 
       section
         h2.bullet Demo
+        i.big.icon-magic
 
       section
-        h3.bullet The Developer is happy, he can use is favorit version tool again
+        h4.bullet The Developer is happy, he can use his favorite version tool, <b>without any price in setup</b>.
         pre.bullet
-          code.
+          code.language-css.
             if( env === 'production'){
               &#x3C;link href=&#x22;&#x3C;% font_url %&#x3E;/myFontProject/<b>10</b>/icon.css&#x22; rel=&#x22;stylesheet&#x22; />
             }else if( env === 'staging' ) {
@@ -115,33 +115,47 @@ html
             }
 
       section
-        h3.bullet And the Designer is happy too:
+        h4 And the Designer is happy too:
+        br
+        br
+        h5.bullet Not needed to:
+          ul
+            li Learn, an additional tool
+            li Send icons to each developer
+            li ... or add to them to a ticket
+
+      section
         ul
-          li not needed send icons to each developer, or ticket
-          li not pressure for deliver the icon, since they don't block the workflow anymore <br/><small class="bullet"><b>Important in case the customer needs to approve</b></small>
-          li only <b>one communication</b> for push the updated icons set to staging or production
+          li No pressure for delivering an icon, since they don't block the workflow anymore. <br/> <small class="bullet"><b>Important in case the customer needs to approve</b></small> <br/><br/>
+          li Only <b>one communication line</b> to push the updated icons set to staging or production.
 
       section
         h2.bullet Conclusion
-        h3.bullet We split the responsibility and in consequence we increase the speed and the quality checking
-        img.bullet(src="img/flow_ord.png", width='100%')
+        h3.bullet We split the responsibility and as a result we increase the speed and the quality
+        img.bullet(src="images/flow_ord.png", width='100%')
 
       section
-        h2.bullet and next?
-        h3.bullet Implementing in production, deliver documentation and naming rule
+        h2.bullet What next?
+        h3.bullet Implementing, deliver documentation and naming rule.
         h3.bullet and add some features...
         ul
-          li Fonts Ligature and Spacing
-          li UTF Fall back
-          li sub folders for categories
+          li Fonts Ligature and Spacing Configuration
+          li UTF Fall back (Gliphy)
+          li Sub folders for categories
           li ...
-          li <b>SpriteFabrique</b> not just vectors, we love pixel too :-)
+          li <b>SpriteFabrique</b> not just vectors, we <i class="icon-heart"></i> pixel too...
 
       section
-        h2 My contacts
-        h3 @ideabile - mauro@insided.nl
-        br
-        h3 Questions?
+        h2.bullet Thanks
+        ul
+          li.bullet to my friend Max, for contributing.
+          li.bullet to my colleagues, to be critic and constructive.
+          li.bullet to the OpenSource resources like: <b>IcoMoon</b>,<b>FontCustom</b>,<b>Fontello</b>.
+          li.bullet But most important, thanks for coming .
 
+      section
+        h3 Let's keep in touch!
+        h4.bullet <i class="icon-twitter"></i> @ideabile - mauro@insided.nl
+        h2.bullet Questions?
 
     script(src='build/build.js')

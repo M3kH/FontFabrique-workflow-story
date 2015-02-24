@@ -5,20 +5,21 @@
 // thanks to Stylus' "import css" and "paths" options
 
 @import 'prism/themes/prism-okaidia.css'
+@import './bg.css'
 // Check out "bower_components/prism/themes/" for available themes
 
 // BASIC COLORS
-$black= #1a1a1a
-$white= #ffffff
+$black= #333
+$white= rgba(255,255,255,0.75);
 $grey= #616a73
 $subtitle= #79838e
-$light-grey= #a7aeb5
+$light-grey= #777
 $blue= #2aaae1
 $error= #ed5937
 
 body {
   font-size: 22px
-  color: $grey
+//  background-color: rgba(30,30,30,0.50);
 }
 
 h1 {
@@ -37,7 +38,7 @@ h3 {
 }
 
 .bespoke-parent {
-  background: $grey;
+  background: rgba(97, 106, 115, 0.8);
 }
 
 .bespoke-slide {
@@ -70,4 +71,9 @@ code[class*="language-"], pre[class*="language-"] {
 
 .italic{
   font-style: italic;
+}
+
+.big{
+  font-size: 100px;
+  color: #000;
 }
