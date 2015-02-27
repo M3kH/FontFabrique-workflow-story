@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>FontIcons ~ a workflow inSided story</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+    <link rel="stylesheet" type="text/css" href="http://fontfabrique.s3.amazonaws.com/1/fontfabrique/28/icons.css">
+  </head>
+  <body>
+    <article>
+      <article>
+        <section class="logo-slide"><img src="/images/insided_logo_800px.png"></section>
+      </article>
+      <section>
+        <h1>FontIcons</h1>
+        <h3 class="italic"><i class="bullet">a</i> <b class="bullet">workflow</b> inSided story</h3>
+      </section>
+      <section>
+        <h2 class="bullet">Who I am?</h2>
+        <h3 class="bullet"><i>FrontEnd Developer</i> ~ at inSided <br/></h3>
+        <h4 class="bullet"><i>Passioned Developer</i> ~ in Life <br/><br/></h4>
+        <h5 class="bullet"><i>OpenSource Contributor</i> ~ in Free Time</h5>
+      </section>
+      <section>
+        <h3 class="bullet">This is not a talk about:</h3>
+        <ul>
+          <li>Iconography</li>
+          <li>Fonts</li>
+          <li>and not, not even Web Fonts <small class="bullet">... not generally ...</small></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="bullet">Web Font Icons</h2>
+        <h3 class="italic bullet">and Why you should start to use it!</h3>
+        <h3 class="bullet">(if you don't yet)</h3>
+        <ul>
+          <li>They are scalable (so no x2 &lt;img&gt; for Retina Display)</li>
+          <li>They are mobile compatible</li>
+          <li>They are compatible with IE 7 ></li>
+          <li><b>They can change color</b></li>
+          <li>Implicit traffic gain on reducing http requests</li>
+          <li>... And of course a lot of open <i>(or free)</i> resources</li>
+          <li>But most important for us, they can be <b>generated</b></li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="bullet">But how to generate Web Fonts?</h3>
+        <ul>
+          <li>IcoMoon</li>
+          <li>FontCustom</li>
+          <li>Fontello</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="bullet">A bit of comparison:</h3><img src="images/table.png" width="100%" class="bullet">
+      </section>
+      <section>
+        <h3 class="bullet">...A bit of inSided Workflow...</h3><img src="images/workflow.png" width="100%" class="bullet">
+      </section>
+      <section>
+        <h3 class="bullet">...A bit more in depth...</h3><img src="images/flow_mass.png" width="100%" class="bullet">
+      </section>
+      <section>
+        <h3 class="bullet">So I made a tool <b>FontFabrique</b></h3>
+        <h5 class="bullet">actually, I am still working on it. :-P <br/> <br/></h5>
+        <h4 class="bullet">... And I ask around to gather inspiration in how to build it...</h4>
+      </section>
+      <section>
+        <h3 class="bullet">I went to the designer, and I asked about using git<span class="bullet" >...</div></h3><img src="http://media.giphy.com/media/l39u4E8g53jDa/giphy.gif" class="bullet">
+      </section>
+      <section>
+        <h3 class="bullet">... and I started to look for alternatives ...</h3>
+        <h3 class="bullet">versioning with UI and OS integration?</h3>
+        <h3 class="bullet">Oh wait... <span class="bullet">already exist, Why not Dropbox?</span></h3>
+      </section>
+      <section>
+        <h3 class="bullet">So I went to the Programmer.</h3>
+        <h3 class="bullet">and when I tell to use Dropbox in production:</h3>
+        <div class="bullet"><iframe width="560" height="315" src="https://www.youtube.com/embed/o_XaJdDqQA0" frameborder="0" allowfullscreen></iframe></div>
+      </section>
+      <section>
+        <h2 class="bullet">No Serious? Why All this?</h2>
+        <h3 class="italic bullet">"Small problems in big scale, are not so small"</h3>
+        <h3 class="italic bullet">"Boyscouting, is continous improving" ~ an <b>inSided Core Value</b></h3>
+        <h4 class="italic bullet">
+          And I think: <br/><br/>
+          <span class="bullet">"Automated Tools, without additional ui/cli, have no learning curve"</span>
+        </h4>
+        <h2 class="bullet"><pre><i class="icon-dropbox"></i> : <i class="icon-picture-o"></i> = <i class="icon-github"></i> : <i class="icon-code"></i></pre></h2>
+      </section>
+      <section>
+        <h3 class="bullet">but for practical people:</h3>
+        <ul>
+          <li>Small kb, we have only what we need</li>
+          <li>Save up from 15 to 20min to generate fonts, everytime an icon is <b>created, updated, deleted</b></li>
+          <li>Code convention for developers, we can work with placeholders. So no waiting for fonts. ( Everybody is happy <i class="icon icon-smile"></i> )</li>
+          <li>We supplement communication, and file transfer, from 15 to 20 min; with procedure.</li>
+          <li>Git and assets, cause conflicts. Conflicts cause time loss, from 10min to 15min. <br/><small>(building instr. <i class="icon-file-code-o"></i> !== builded file <i class="icon-file-image-o"></i>)</small></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="bullet">Demo</h2><i class="big icon-magic"></i>
+      </section>
+      <section>
+        <h4 class="bullet">The Developer is happy, he can use his favorite version tool, <b>without any price in setup</b>.</h4>
+        <pre class="bullet"><code class="language-css">if( env === 'production'){
+  &#x3C;link href=&#x22;&#x3C;% font_url %&#x3E;/myFontProject/<b>10</b>/icon.css&#x22; rel=&#x22;stylesheet&#x22; />
+}else if( env === 'staging' ) {
+  &#x3C;link href=&#x22;&#x3C;% font_url %&#x3E;/myFontProject/<b>11</b>/icon.css&#x22; rel=&#x22;stylesheet&#x22; /
+} else {
+  &#x3C;link href=&#x22;&#x3C;% font_url %&#x3E;/myFontProject/<b>latest</b>/icon.css&#x22; rel=&#x22;stylesheet&#x22; /
+}
+</code></pre>
+      </section>
+      <section>
+        <h4>And the Designer is happy too:</h4><br><br>
+        <h5 class="bullet">Not needed to:
+          <ul>
+            <li>Learn, an additional tool</li>
+            <li>Send icons to each developer</li>
+            <li>... or add them to a ticket</li>
+          </ul>
+        </h5>
+      </section>
+      <section>
+        <ul>
+          <li>No pressure for delivering an icon, since they don't block the workflow anymore. <br/> <small class="bullet"><b>Important in case the customer needs to approve</b></small> <br/><br/></li>
+          <li>Only <b>one communication line</b> to push the updated icons set to staging or production.</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="bullet">Conclusion</h2>
+        <h3 class="bullet">We split the responsibility and as a result we increase the speed and the quality</h3><img src="images/flow_ord.png" width="100%" class="bullet">
+      </section>
+      <section>
+        <h2 class="bullet">What next?</h2>
+        <h3 class="bullet">Implementing, deliver documentation and naming rule.</h3>
+        <h3 class="bullet">and add some features...</h3>
+        <ul>
+          <li>Fonts Ligature and Spacing Configuration</li>
+          <li>UTF Fall back (Gliphys)</li>
+          <li>Sub folders for categories</li>
+          <li>...</li>
+          <li><b>SpriteFabrique</b> not just vectors, we <i class="icon-heart"></i> pixel too...</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="bullet">Thanks</h2>
+        <ul>
+          <li class="bullet">to my friend Max, for contributing.</li>
+          <li class="bullet">to my colleagues, to be critic and constructive.</li>
+          <li class="bullet">to the OpenSource resources like: <b>IcoMoon</b>, <b>FontCustom</b>, <b>Fontello</b>.</li>
+          <li class="bullet">But most important, thanks for coming .</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Let's keep in touch!</h3>
+        <h4 class="bullet"><i class="icon-twitter"></i> @ideabile - mauro@insided.nl <br/><br/><br/></h4>
+        <h2 class="bullet">Questions?</h2>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
